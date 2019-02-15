@@ -54,12 +54,15 @@ public class ReadListOfBooks {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-
+        /**
+         * read file
+         * =========
+         */
         try {
             System.out.println("Read in list of books");
             books = readLines(new File(filename));
             for (String book : books) {
-                System.out.println(book.toString());
+                System.out.println(book);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -82,7 +85,7 @@ public class ReadListOfBooks {
         System.out.println();
         System.out.println(" -- sorted books --");
         for (String book : books) {
-            System.out.println(book.toString());
+            System.out.println(book);
         }
 
         //another way to print a collection
@@ -98,7 +101,7 @@ public class ReadListOfBooks {
         System.out.println();
         System.out.println(" -- unsorted books --");
         for (String book : books) {
-            System.out.println(book.toString());
+            System.out.println(book);
         }
 
         //get a random book from the arraylist
